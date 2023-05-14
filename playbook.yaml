@@ -1,0 +1,14 @@
+---
+- name: master part
+  hosts: localhost
+  become: true
+  tasks:
+    - name: installation on master
+      script: master.sh
+
+#- name: worker part
+#  hosts: workers
+#  become: true
+#  tasks:
+#    - name: installation on workers
+#      script: worker.sh
